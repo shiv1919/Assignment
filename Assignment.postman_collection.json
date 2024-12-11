@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "87e39601-3170-4c65-84a2-afcd181a00c3",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38962526"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/auth/login",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Key",
+						"value": "Cookie",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Value",
+						"value": "JSESSIONID=c59b8026cbc935aaadab8262ab9d80b4",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"student\",\r\n    \"password\": \"studentpass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "user",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "1a83484a-2556-45a8-b655-643084676671",
+							"disabled": true
+						},
+						{
+							"key": "jsessionid",
+							"value": "c59b8026cbc935aaadab8262ab9d80b4",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/createstudent?name=sai&address=pune",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTczMzgxNjUzNiwiZXhwIjoxNzMzOTAyOTM2fQ.r3ikhxyrQzBCTRWiXPvVDscPWQ9JgUGv-OQyeV-ziWE",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/createstudent?name=sai&address=pune",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createstudent"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "sai"
+						},
+						{
+							"key": "address",
+							"value": "pune"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getallstudents",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTczMzgxNjUzNiwiZXhwIjoxNzMzOTAyOTM2fQ.r3ikhxyrQzBCTRWiXPvVDscPWQ9JgUGv-OQyeV-ziWE",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/getallstudents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getallstudents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/createsubject?name=maths",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTczMzgyMTI1MSwiZXhwIjoxNzMzOTA3NjUxfQ.cznH_jjbiNKi82nP5vb2pv6Sz6u3RaXlSwb5a_daKDQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/createsubject?name=maths",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createsubject"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "maths"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getallsubjects",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTczMzgyMTI1MSwiZXhwIjoxNzMzOTA3NjUxfQ.cznH_jjbiNKi82nP5vb2pv6Sz6u3RaXlSwb5a_daKDQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/getallsubjects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getallsubjects"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
