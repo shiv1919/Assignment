@@ -116,7 +116,7 @@ Created students in table STUDENT
 ![alt text](Images/students.png)
 
 Create Subjects in table SUBJECT
-![alt text](Images/users.png) 
+![alt text](Images/subject.png) 
  
 Created Users in table USERS
-![alt text](Images/subject.png)
+![alt text](Images/users.png)
